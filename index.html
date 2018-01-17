@@ -56,15 +56,17 @@
             </div>
           </div>
         </div>
-        <button class="btn btn-info" type="submit" name="submit">SUBMIT TO ME</button>
+        <button class="btn btn-info submitbtn" type="submit" name="submit">SUBMIT TO ME</button>
+        <input id="agree" type="checkbox" name="warningSigns" value="0" required>AGREE TO MY TERMS!<br>
       </form>
       <div id="stressMidnight" class="panel panel-info">
         <div class="panel-heading">
-          <h2 id="extreme">STRESS LEVEL: MIDNIGHT</h2>
+          <h2>STRESS LEVEL: MIDNIGHT</h2>
         </div>
         <div class="panel-body">
           <p>YOU ARE SO STRESSED YOU COULD DIE AT ANY MOMENT. SCREAM, FOR THE WOLVES ARE CIRCLING, THE END IS NIGH.</p>
           <img src="img/midnight.jpg" alt="THE WOLVES">
+          <button type="button" class="btn btn-info retake" name="button">RETAKE</button>
         </div>
       </div>
       <div id="stress9" class="panel panel-danger">
@@ -74,15 +76,27 @@
         <div class="panel-body">
           <p>Your stress is reaching peak levels, please frantically meditate, or engage in some primal screaming.</p>
           <img src="img/highstress.jpg" alt="STRESS">
+          <button type="button" class="btn btn-info retake" name="button">RETAKE</button>
         </div>
       </div>
-      <div id="stress5" class="panel panel-warning">
+      <div id="stress6" class="panel panel-warning">
         <div class="panel-heading">
           <h2>STRESS LEVEL: MODERATE</h2>
         </div>
         <div class="panel-body">
           <p>Your stress levels are above baseline. Maybe you're just having a rough day? Perhaps a recent stressful conversation?</p>
           <img id="ehh" src="img/moderatestress.jpeg" alt="Ehhhhhh">
+          <button type="button" class="btn btn-info retake" name="button">RETAKE</button>
+        </div>
+      </div>
+      <div id="stress3" class="panel panel-info">
+        <div class="panel-heading">
+          <h2>STRESS LEVEL: LOW</h2>
+        </div>
+        <div class="panel-body">
+          <p>Your stress levels are very low, go enjoy your day and stop taking dumb tests online!</p>
+          <img src="img/lowstress.jpg" alt="VaporChill">
+          <button type="button" class="btn btn-info retake" name="button">RETAKE</button>
         </div>
       </div>
       <div id="stress0" class="panel panel-default">
@@ -92,6 +106,7 @@
         <div class="panel-body">
           <p>CONGRATULATIONS! According to this very scientific* survey you should be 100% stress free. Now pat yourself on the back and STOP COMPLAINING.</p>
           <img src="img/nostress.jpg" alt="">
+          <button type="button" class="btn btn-info retake" name="button">RETAKE</button>
         </div>
       </div>
       <div id="stressBuddha" class="panel panel-info">
@@ -99,8 +114,9 @@
           <h2>STRESS LEVEL: BUDDHA</h2>
         </div>
         <div class="panel-body">
-          <p>Well you have zero signs of stress, and youre engaging in stress reducing activities, so I guess you must have achieved enlightenment! Congratulations!</p>
+          <p>Well you have zero signs of stress, and you're engaging in stress reducing activities, so I guess you must have achieved enlightenment! Congratulations!</p>
           <img src="img/buddha.jpg" alt="VaporChill">
+          <button type="button" class="btn btn-info retake" name="button">RETAKE</button>
         </div>
       </div>
     </div>

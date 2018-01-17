@@ -1,11 +1,37 @@
+#stressMidnight h2 {
+  color: red;
+  text-align: center;
+  animation-duration: 400ms;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes blink {
+  from {
+     opacity: 1;
+  }
+  to {
+     opacity: 0;
+  }
+}
+h1 {
+  text-align: center;
+}
 h2 {
   text-align: center;
+}
+.jumbotron {
+  margin-top: 30px;
 }
 p {
   font-size: 30px;
   text-align: center;
 }
-#stressMidnight, #stress9, #stress5, #stress0, #stressBuddha {
+body {
+  background-image:linear-gradient(white, darkgrey);
+  height: 1200px;
+}
+#stressMidnight, #stress9, #stress6, #stress0, #stress3, #stressBuddha {
   display: none;
 }
 
@@ -25,7 +51,27 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+img:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
 
+}
 #ehh {
   border-radius: 100%;
+}
+.scary {
+  background-image: url(http://bestanimations.com/Earth&Space/Moon/moon-animation29.gif);
+  background-size: auto;
+
+}
+.buddha {
+  background-image: url(https://i.pinimg.com/originals/89/3d/32/893d32556a8d91a50906605c54e93a9d.gif);
+}
+#stressBuddha {
+  background-image: url(https://78.media.tumblr.com/bc696890ff68cca003c692af6b390e1d/tumblr_on72shoEAV1vfw22ho1_500.gif);
+  color: white;
+}
+.submitbtn {
+  margin-right: 20px;
 }

@@ -1,9 +1,10 @@
 $(document).ready(function() {
   $("form#stressSurvey").submit(function(event) {
+  event.preventDefault();
 
   var resultArray = [];
 
-  $("#stressSurvey").hide();
+  $("#stressSurvey").slideUp();
   $("input:checkbox[name=warningSigns]:checked").each(function() {
     var warningResult = parseInt($(this).val());
     resultArray.push(warningResult);
@@ -24,17 +25,31 @@ $(document).ready(function() {
   });
 
   if (result === -5) {
-    $("#stressBuddha").show();
+    $("#stressBuddha").slideDown();
+    $("body").addClass("buddha");
   } else if (result <= 0){
-    $("#stress0").show();
-  } else if (result <= 5){
-    $("#stress5").show();
+    $("#stress0").slideDown();
+  } else if (result <= 3){
+    $("#stress3").slideDown();
+  } else if (result <= 6){
+    $("#stress6").slideDown();
   } else if (result <= 9){
-    $("#stress9").show();
+    $("#stress9").slideDown();
   } else if (result === 10){
-    $("#stressMidnight").show();
+    $("#stressMidnight").slideDown();
+    $("body").addClass("scary");
   }
 
-  event.preventDefault();
+  $(".retake").click(function() {
+    $("#stressBuddha").slideUp();
+    $("#stress0").slideUp();
+    $("#stress3").slideUp();
+    $("#stress6").slideUp();
+    $("#stress9").slideUp();
+    $("#stressMidnight").slideUp();
+    $("#stressSurvey").slideDown();
+    $("body").removeClass("scary");
+    $("body").removeClass("buddha");
+    });
   });
 });
