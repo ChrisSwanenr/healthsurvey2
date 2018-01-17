@@ -1,3 +1,31 @@
-#work-responses {
+h2 {
+  text-align: center;
+}
+p {
+  font-size: 30px;
+  text-align: center;
+}
+#stressMidnight, #stress9, #stress5, #stress0, #stressBuddha {
   display: none;
+}
+
+#stressMidnight .panel-heading {
+  background-color: black;
+  color: red;
+}
+
+#stressMidnight .panel-body {
+  background-color: darkgrey;
+  color: white;
+}
+
+img {
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#ehh {
+  border-radius: 100%;
 }
