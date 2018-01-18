@@ -23,7 +23,7 @@ $(document).ready(function() {
   var result = resultArray.reduce(function (a, b) {
     return a + b;
   });
-
+  alert(result);
   if (result === -5) {
     $("#stressBuddha").slideDown();
     $("body").addClass("buddha");
