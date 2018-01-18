@@ -78,6 +78,6 @@ img:hover {
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
   img {
-    width: 250px;
-    height: 250px;
+    width: 500px;
+    height: 500px;
   }
